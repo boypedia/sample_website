@@ -1,0 +1,244 @@
+<!doctype.html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title> Home</title>
+        <link href="style.css" rel="stylesheet">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+    
+<!--newly added for dropdown hover-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
+
+<!--font awsome-->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    </head>
+
+ <body>
+
+<!--start of navigation bar-->
+   <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class ="container-fluid">
+      <div class="navbar-header">
+         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-PVT-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+     <a class="navbar-brand" href="index.html" style=" font-family: Comic Sans MS "><strong>Media360hub</strong>
+     </a>
+     </div>
+
+
+     <div class="collapse navbar-collapse navbar-right" >
+    <!--<div class="navbar-header navbar-right" >-->
+     <ul class="nav navbar-nav" id="nav">
+      <li><a href="index.html"><i class="glyphicon glyphicon-home"></i>Home</a></li>
+      <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-animations="fadeInDown fadeInRight fadeInUp fadeInLeft">Services <span class="caret"></span></a>
+          <ul class="dropdown-menu" id="products-menu">
+            <li><a href="smm.html"><b>SMM</b></a></li>
+            <li><a href="seo.html"><b>SEO</b></a></li>
+            <li><a href="digital.html"><b> Digital Marketing</b></a></li>
+            <li><a href="Whatsapp.html"><b> Whatsapp Marketing</b></a></li>
+
+            <li role="separator" class="divider"></li>
+            <li><a href="M360AdNetwork.html"><b>M360AdNetwork</b></a></li>
+            <!--<li role="separator" class="divider"></li>
+            <li><a href="#">One more separated link</a></li>-->
+          </ul>
+      </li>
+     
+      <li><a href="about.html"><i class="glyphicon glyphicon-info-sign"></i> About Us</a></li>
+      <li><a href="contact.html">Blog</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+      
+     </ul>
+    </div>
+    </div>
+
+
+<!--end of dropdown-->
+
+
+<!-- dropdown hover-->
+  <script type="text/javascript">
+  $(function(){
+  $("#nav .dropdown").hover(
+    function() {
+      $('#products-menu.dropdown-menu', this).stop( true, true ).fadeIn("fast");
+      $(this).toggleClass('open');
+    },
+    function() {
+      $('#products-menu.dropdown-menu', this).stop( true, true ).fadeOut("fast");
+      $(this).toggleClass('open');
+    });
+});
+  </script>
+  <!--end of dropdown hover-->
+
+
+
+   </nav>
+<!--end of navigation bar-->
+
+<!--body-->
+<div class="container-fluid" style="margin-bottom: 10px; height: 50px;">
+  
+</div>
+<div class="row">
+ <div class="container col-md-6 col-sm-6" >
+    <div class="panel panel-default" style="margin-left: 5%;" >
+      <img src="whatsapp1.jpg" alt="Whatsapp Marketing1" style="width: 100%;height: 200px;">
+      </div>
+  </div>
+  <div class="container col-md-6 col-sm-6">
+    <div class="panel panel-default" style="margin-right: 5%;"> 
+      <div class="panel-heading text-center"><strong>WhatsApp Marketing</strong> 
+        </div>
+      <div class="panel-body" >
+        <i class="fa fa-whatsapp fa-4x" aria-hidden="true"></i>
+          WhatsApp is a cross-platform mobile app that enables message exchange across different mobility platforms like iPhone, BlackBerry, Android, Windows Phone and Nokia.                    
+        </div> 
+    </div>
+    </div>
+  </div>
+     
+<div class="row">
+  <div class="container col-md-6 col-sm-6">
+    <div class="panel panel-default" style="margin-left: 5%;">
+     <img src="whatsapp2.jpg" alt="Whatsapp Marketing2" style="width: 100%;height: 200px;">
+    </div>
+  </div>
+  <div class="container col-md-6 col-sm-6">
+      <div class="panel panel-default" style="margin-right:5%; ">
+        <div class="panel-heading text-center"><strong> Bulk  WhatsApp Marketing</strong></div>
+        <div class="panel-body">
+          <i class="fa fa-whatsapp fa-4x" aria-hidden="true"></i>
+          Bulk WhatsApp Marketing is the new Way of Marketing as it is bigger than Social Media Marketing as well as bigger than SMS Marketing this supports many formats Text, Image, Audio, Video, Vcards and location.
+        </div>                    
+     </div>
+   </div>
+  </div>
+
+
+
+    <div class="row">
+     <div class="container col-md-6 col-sm-6">
+      <div class="panel panel-default">
+      <div class="panel-heading text-center"> Bulk  WhatsApp Marketing</div>
+      <div class="panel-body">
+        Bulk WhatsApp Marketing is the new Way of Marketing as it is bigger than Social Media Marketing as well as bigger than SMS Marketing this supports many formats Text, Image, Audio, Video, Vcards and location.
+      </div>             
+      </div> 
+      </div>
+     <div class="container col-md-6 col-sm-6">
+        <div class="panel panel-default">
+        <div class="panel-heading text-center">
+          Boost Your Business 
+          </div>
+        <div class="panel-body">
+           Don’t have WhatsApp numbers for potential customers? Use our numbers filter and finder to extract million numbers from all over the world . 
+        </div>           
+      </div> 
+      </div>
+      </div>
+
+      <div class="row">
+      <div class="container col-md-6 col-sm-6">
+        <div class="panel panel-default">
+        <div class="panel-heading text-center">
+              Support Media
+          </div>
+        <div class="panel-body">
+          Send interactive texts, images, audio, video, vCard and location to thousand WhatsApp numbers with just a few clicks.              
+        </div>             
+      </div> 
+      </div>
+
+      <div class="container col-md-6 col-sm-6">
+        <div class="panel panel-default">
+        <div class="panel-heading text-center">
+          Impact of WhatsApp 
+          </div>
+        <div class="panel-body">        
+          There are many impact or effect to the society on WhatsApps marketing. The first is with the increased adoption of smartphones all over the world.
+          </div>
+          </div>
+          </div>
+          </div>
+
+      
+     <!--<div class="container col-md-6 col-sm-12">
+            <i class="fa fa-whatsapp fa-4x" aria-hidden="true"></i>
+              <h3>Boost Business Sales </h3>
+              <p>
+                  WhatsApp marketing is a good tool to promote your new products or discount offers. You can send detail information about a product to individuals or targeted groups. You can share digital pictures of a product or video.
+
+              </p>
+                    
+      </div> 
+      -->
+     
+     
+
+
+  
+
+  
+
+
+
+<!--end body-->
+
+
+
+
+<!--start of footer-->
+
+ <footer class="site-footer">
+  <div class="container">
+    
+       <!--<address>
+        <h4>alpha 1</h4>
+        <p>greater noida<br>uttar pradesh<br>203308</p>
+       </address>-->
+       <div class="col-md-5" style="color: white;">Copyright ParkView Traders 2017</div><br>
+   
+      <div class="bottom-footer">
+            <div class="col-md-7">
+              <ul class="footer-nav">
+                <li><a href="index.html">Home</li>
+                <li><a href="about.html">About us</li>
+                <li><a href="contact.html">Contact us</li>
+
+
+            </ul>
+          </div>
+          <div class="col-md-5">
+            <ul class="footer-nav-link">
+              <li><a href="#"><i class="fa fa-facebook-official fa-4x" aria-hidden="true"></i></a></li>
+
+              <li><a href="#"><i class="fa fa-instagram fa-4x" aria-hidden="true"></i></a></li>
+
+              <li><a href="#"><i class="fa fa-twitter fa-4x" aria-hidden="true"></i></a></li>
+
+              <li><a href="#"><i class="fa fa-linkedin fa-4x" aria-hidden="true"></i></a></li>
+
+
+            </ul>
+          </div>
+
+      </div>
+   </div>
+ </footer>
+<!-- end of footer-->
+
+ <script src="js/jquery.js"></script>
+ <script src="js/bootstrap.min.js"></script>
+ </body>
+ </html>

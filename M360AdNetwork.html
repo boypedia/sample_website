@@ -1,0 +1,185 @@
+<!doctype.html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title> Home</title>
+        <link href="style.css" rel="stylesheet">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+    
+<!--newly added for dropdown hover-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
+
+<!--font awsome-->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    </head>
+
+ <body>
+
+<!--start of navigation bar-->
+   <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class ="container-fluid">
+      <div class="navbar-header">
+         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-PVT-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+     <a class="navbar-brand" href="index.html" style=" font-family: Comic Sans MS "><strong>Media360hub</strong>
+     </a>
+     </div>
+
+
+     <div class="collapse navbar-collapse navbar-right" >
+    <!--<div class="navbar-header navbar-right" >-->
+     <ul class="nav navbar-nav" id="nav">
+      <li><a href="index.html"><i class="glyphicon glyphicon-home"></i>Home</a></li>
+      <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-animations="fadeInDown fadeInRight fadeInUp fadeInLeft">Services <span class="caret"></span></a>
+          <ul class="dropdown-menu" id="products-menu">
+            <li><a href="smm.html"><b>SMM</b></a></li>
+            <li><a href="seo.html"><b>SEO</b></a></li>
+            <li><a href="digital.html"><b> Digital Marketing</b></a></li>
+            <li><a href="Whatsapp.html"><b> Whatsapp Marketing</b></a></li>
+
+            <li role="separator" class="divider"></li>
+            <li><a href="M360AdNetwork.html"><b>M360AdNetwork</b></a></li>
+            <!--<li role="separator" class="divider"></li>
+            <li><a href="#">One more separated link</a></li>-->
+          </ul>
+      </li>
+     
+      <li><a href="about.html"><i class="glyphicon glyphicon-info-sign"></i> About Us</a></li>
+      <li><a href="contact.html">Blog</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+      
+     </ul>
+    </div>
+    </div>
+
+
+<!--end of dropdown-->
+
+
+<!-- dropdown hover-->
+  <script type="text/javascript">
+  $(function(){
+  $("#nav .dropdown").hover(
+    function() {
+      $('#products-menu.dropdown-menu', this).stop( true, true ).fadeIn("fast");
+      $(this).toggleClass('open');
+    },
+    function() {
+      $('#products-menu.dropdown-menu', this).stop( true, true ).fadeOut("fast");
+      $(this).toggleClass('open');
+    });
+});
+  </script>
+  <!--end of dropdown hover-->
+
+
+
+   </nav>
+<!--end of navigation bar-->
+
+<!--content start-->
+
+<div class="container" style="margin-top: 10%;" >
+ <div class="row">
+  <div class="container col-md-4 col-sm-4 ">
+    <img src="advertiser-network.png" class="img-responsive" alt="advertiser-network-pic">
+  </div>
+ <div class="container-fluid col-md-8 col-sm-8">
+    <p>
+    Media360 Advertising  is one of the quickest developing distributer systems. Media360 Advertising gives an entire solution for distributers to create colossal income from their sites by offering the best offers on the web and encourages the distributers to monitor their execution by giving web based detailing. Media360 works with distributers to ad lib their execution by proposing the appropriate offers and projects in view of the site content. The most helpful perspective with Media360 is quick Payouts. Your execution is acknowledged soon and you don't need to sit tight for 60 or 90 days for the Payouts. Media360 enables distributers to procure more income on a compensation for every execution or Display premise. Media360 conveys tremendous degree for distributers to band together with many publicists and get to a large number of promotions. Media360has selective offers from promoters which are not accessible with other distributer systems. Be a piece of the fruitful system and experience the reality of business.
+    </p>
+  </div>
+  </div>
+</div>
+
+
+<div class="container">
+
+<div class="container col-md-6 col-sm-6 ">
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h4 style="text-align: center;">For Publisher’s</h4>
+  </div>
+  <div class="panel-body">
+    We provide you simple access to high quality display ads by associating with all the significant purchaser systems.Seamlessly activate specialized mobile ads.
+  </div>
+<div class="panel-footer">
+<a class="btn btn-link btn-block disabled" href="#" role="button">Sign UP</a>
+<a class="btn btn-link btn-block disabled" href="#" role="button">Login</a>
+</div>
+</div>
+</div>
+
+<div class="container col-md-6 col-sm-6">
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h4 style="text-align: center;">For Advertiser’s</h4>
+  </div>
+  <div class="panel-body">
+    Get to our publisher stock by joining with the Adnetwork.Our Network comes to millions searchers in the Globally who are probably going to earn through 24% more than the normal searcher, and liable to earn through 5% more than Google Ad.  
+  </div>
+<div class="panel-footer">
+
+<a class="btn btn-link btn-block disabled" href="#" role="button">Sign UP</a>
+<a class="btn btn-link btn-block disabled" href="#" role="button">Login</a>
+</div>
+</div>
+</div>
+</div>
+
+
+
+<!--content ending-->
+
+
+<!--start of footer-->
+
+ <footer class="site-footer">
+  <div class="container">
+       <div class="col-md-5" style="color: white;">Copyright ParkView Traders 2017</div><br>
+      <div class="bottom-footer">
+            <div class="col-md-7">
+              <ul class="footer-nav">
+                <li><a href="index.html">Home</li>
+                <li><a href="about.html">About us</li>
+                <li><a href="contact.html">Contact us</li>
+
+            </ul>
+          </div>
+          <div class="col-md-5">
+            <ul class="footer-nav-link">
+              <li><a href="#"><i class="fa fa-facebook-official fa-4x" aria-hidden="true"></i></a></li>
+
+              <li><a href="#"><i class="fa fa-instagram fa-4x" aria-hidden="true"></i></a></li>
+
+              <li><a href="#"><i class="fa fa-twitter fa-4x" aria-hidden="true"></i></a></li>
+
+              <li><a href="#"><i class="fa fa-linkedin fa-4x" aria-hidden="true"></i></a></li>
+
+
+            </ul>
+          </div>
+
+      </div>
+   </div>
+ </footer>
+
+<!-- end of footer-->
+
+ <script src="js/jquery.js"></script>
+ <script src="js/bootstrap.min.js"></script>
+ <script src="js/bootstrap-dropdownhover.min.js"></script>
+
+ </body>
+ </html>
+
+
