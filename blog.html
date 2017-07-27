@@ -1,0 +1,136 @@
+<!doctype.html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title> Home</title>
+        <link href="style.css" rel="stylesheet">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+    
+<!--newly added for dropdown hover-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
+
+<!--font awsome-->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    </head>
+
+ <body>
+
+<!--start of navigation bar-->
+   <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class ="container-fluid">
+      <div class="navbar-header">
+         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-PVT-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+     <a class="navbar-brand" href="index.html" style=" font-family: Comic Sans MS "><strong>Media360hub</strong>
+     </a>
+     </div>
+
+
+     <div class="collapse navbar-collapse navbar-right" >
+    <!--<div class="navbar-header navbar-right" >-->
+     <ul class="nav navbar-nav" id="nav">
+      <li><a href="index.html"><i class="glyphicon glyphicon-home"></i>Home</a></li>
+      <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-animations="fadeInDown fadeInRight fadeInUp fadeInLeft">Services <span class="caret"></span></a>
+          <ul class="dropdown-menu" id="products-menu">
+            <li><a href="smm.html"><b>SMM</b></a></li>
+            <li><a href="seo.html"><b>SEO</b></a></li>
+            <li><a href="digital.html"><b> Digital Marketing</b></a></li>
+            <li><a href="Whatsapp.html"><b> Whatsapp Marketing</b></a></li>
+
+            <li role="separator" class="divider"></li>
+            <li><a href="M360AdNetwork.html"><b>M360AdNetwork</b></a></li>
+            <!--<li role="separator" class="divider"></li>
+            <li><a href="#">One more separated link</a></li>-->
+          </ul>
+      </li>
+     
+      <li><a href="about.html"><i class="glyphicon glyphicon-info-sign"></i> About Us</a></li>
+      <li><a href="contact.html">Blog</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+      
+     </ul>
+    </div>
+    </div>
+
+
+<!--end of dropdown-->
+
+
+<!-- dropdown hover-->
+  <script type="text/javascript">
+  $(function(){
+  $("#nav .dropdown").hover(
+    function() {
+      $('#products-menu.dropdown-menu', this).stop( true, true ).fadeIn("fast");
+      $(this).toggleClass('open');
+    },
+    function() {
+      $('#products-menu.dropdown-menu', this).stop( true, true ).fadeOut("fast");
+      $(this).toggleClass('open');
+    });
+});
+  </script>
+  <!--end of dropdown hover-->
+
+
+
+   </nav>
+<!--end of navigation bar-->
+<div class="container-fluid" style="height: 50px; margin-bottom: 5px;">
+</div>
+
+<!--maincontent-->
+ <div class="row">
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="blog/smm1.jpg" alt="smm-Pic">
+      <div class="caption">
+        <h3>Why choose SMM ?</h3>
+        <p>SMM is required to brand now a days. everyone who has small or large scale business to interact with their consumer they are in need to brand the producet they are showcasing . So we can say SMM is vital part in today's era </p>
+        <p><a href="blog/smm-blog1.html" class="btn btn-primary" role="button">Learn More..</a> </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="blog/SEO-1.png" alt="SEO-Pic">
+      <div class="caption">
+        <h3>SEO for ranking</h3>
+        <p>SEO(Search Engine Optimization) help to imporve page ranking is your search so people get to know more easily, and they will look for your content online more often,using spcific keyword for search can enhance your search result.</p>
+        <p><a href="blog/seo-blog1.html" class="btn btn-primary" role="button">Learn More..</a> </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="..." alt="...">
+      <div class="caption">
+        <h3>Thumbnail label</h3>
+        <p>...</p>
+        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<nav aria-label="...">
+  <ul class="pager">
+    <li class="previous disabled"><a href="#"><span aria-hidden="true">&larr;</span> Previous</a></li>
+    <li class="next disabled"><a href="#">Newer <span aria-hidden="true">&rarr;</span></a></li>
+  </ul>
+</nav>
+<!--end of content-->
+</body>
+</html>
