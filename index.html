@@ -4,8 +4,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title> Home</title>
-        <link href="style.css" rel="stylesheet">
-        <link href="css/bootstrap.min.css" rel="stylesheet">
 
 <!--newly added for dropdown hover-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
@@ -14,6 +12,9 @@
 
 <!--font awsome-->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
     </head>
 
  <body>
@@ -35,7 +36,7 @@
 
 
      <div class="collapse navbar-collapse navbar-right" >
-    <!--<div class="navbar-header navbar-right" >-->
+    <!--<div class="navbar-header navbar-right #bs-PVT-navbar-collapse-1" >-->
      <ul class="nav navbar-nav" id="nav">
      	<li><a href="index.html"><i class="glyphicon glyphicon-home"></i>Home</a></li>
       <li class="dropdown">
@@ -66,19 +67,6 @@
 
 
 <!-- dropdown hover-->
-  <script type="text/javascript">
-  $(function(){
-  $("#nav .dropdown").hover(
-    function() {
-      $('#products-menu.dropdown-menu', this).stop( true, true ).fadeIn("fast");
-      $(this).toggleClass('open');
-    },
-    function() {
-      $('#products-menu.dropdown-menu', this).stop( true, true ).fadeOut("fast");
-      $(this).toggleClass('open');
-    });
-});
-  </script>
   <!--end of dropdown hover-->
 
 
@@ -112,7 +100,7 @@
     </ol>
 
     <!-- Wrapper for slides -->
-    <div class="carousel-inner">
+    <div class="carousel-inner" role="listbox" >
 
       <div class="item active">
         <img src="services1.jpg" class="img-responsive" alt="media-working" >
@@ -123,7 +111,7 @@
       </div>
 
       <div class="item">
-        <img src="crausel.jpg" class="img-responsive" alt="Digital-market" >
+        <img src="crausel.jpg" class="img-responsive" alt="Digital-market"  >
         <div class="carousel-caption">
         </div>
       </div>
@@ -141,7 +129,7 @@
       </div>
 
       <div class="item">
-        <img src="crausel3.jpg"  class="img-responsive" alt="Marketing" >
+        <img src="crausel3.jpg"  class="img-responsive" alt="Marketing"  >
         <div class="carousel-caption">
         </div>
       </div>
@@ -183,12 +171,13 @@
 <!--end quote-->
 
 <!--about us-->
+<div class="container">
  <div class="container-fluid col-sm-6" id="what_do" style="height: 200px;width: 100%; background-color: #efeff2;">
 
  	<h2 style="text-align: center;font-family:arial; "><strong>What We Do</strong></h2>
 
  	 <ul>
- 	 	<li><a href="whatsapp.html"><i class="fa fa-whatsapp" aria-hidden="true"></i>
+ 	 	<li><a href="Whatsapp.html"><i class="fa fa-whatsapp" aria-hidden="true"></i>
 </a></li>
  	 	<li><a href="smm.html"><i class="fa fa-facebook" aria-hidden="true"></i>
 </a></li>
@@ -198,6 +187,7 @@
 </a></li>
 
  	 </ul>
+ </div>
  </div>
 <!--end about us-->
 
@@ -227,7 +217,7 @@
             <h4 class="text-center"> SEO Marketing </h4>
           </div>
          <div class="panel-body">
-            SEO (Search engine optimization)  is one of the most important of online marketing '&' is the process of acquiring traffic for the web pages from the different search engines like Google, yahoo, Bing etc.
+            SEO (Search engine optimization)  is one of the most important of online marketing. It is the process of acquiring traffic for the web pages from the different search engines like Google, yahoo, Bing etc.
           </div>
         <div class="panel-footer text-center">
           <a class="btn btn-info btn-sm" href="seo.html" role="button">Learn more</a>
@@ -412,9 +402,10 @@
           <div class="item active">
             <div class="col-xs-12 col-sm-6 col-md-3"><a href="#"><img src="airtel.png " width="200" height="200" alt="airtel-client-logo &amp;text=1" style="conte: " class="img-responsive"></a></div>
           </div>
-          <div class="item">
+          <!--<div class="item">
             <div class="col-xs-12 col-sm-6 col-md-3"><a href="#"><img src="ccc.jpg" width="200" height="200" alt="ccc-client-logo &amp;text=2" class="img-responsive"></a></div>
           </div>
+        -->
           <div class="item">
             <div class="col-xs-12 col-sm-6 col-md-3"><a href="#"><img src="honda.jpg" width="200" height="200" alt="honda-client-logo &amp;text=3" class="img-responsive"></a></div>
           </div>
@@ -444,7 +435,7 @@
 <section class="container-fluid">
         <div class="container" id="map_content">
           <div class="container-fluid col-lg-8  col-md-4 col-sm-4 col-xs-12">
-              <h4>OUR OFFICES</h4>
+              <h3 style="color:red;">OUR OFFICE</h3>
                         <p><strong>Office address:</strong> 1875,opposite Honda Showroom Sector 52, Gurugram, Haryana 122001</p>
 
 
@@ -573,6 +564,20 @@ s0.parentNode.insertBefore(s1,s0);
  <script src="js/jquery.js"></script>
  <script src="js/bootstrap.min.js"></script>
  <script src="js/bootstrap-dropdownhover.min.js"></script>
+ <script type="text/javascript">
+ $(function(){
+ $("#nav .dropdown").hover(
+   function() {
+     $('#products-menu.dropdown-menu', this).stop( true, true ).fadeIn("fast");
+     $(this).toggleClass('open');
+   },
+   function() {
+     $('#products-menu.dropdown-menu', this).stop( true, true ).fadeOut("fast");
+     $(this).toggleClass('open');
+   });
+});
+ </script>
+ 
 
  </body>
  </html>

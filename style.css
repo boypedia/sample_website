@@ -82,7 +82,7 @@
 #what_do ul {
 	position: absolute;
 	left: 50%;
-	transform: translate(-40%,-40%);
+	transform: translate(-50%,-50%);
 	display: flex;
 	margin-top: 50px;
   justify-content: center;
@@ -389,4 +389,18 @@
 .footer-nav-link li:nth-child(5):before
 {
 	background: #0077B5;
+}
+/* media tag for map content width*/
+@media only screen and (max-width:767px){
+	#map_content{
+		width: 50%;
+		max-width: 100% !important;
+	}
+}
+/*media tag for the crousel normal height for mobile device nd fixed for full screen*/
+@media only screen and (min-width:767px){
+	#myCarousel .carousel-inner{
+		width:100%;
+		height: 400px !important;
+	}
 }
